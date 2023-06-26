@@ -1,5 +1,7 @@
 {
   "name": "memojization",
+  "private": true,
+  "homepage": "https://gusalbukrk.github.io/memojization/",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
