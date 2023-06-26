@@ -1,0 +1,84 @@
+main {
+  text-align: right;
+}
+
+aside {
+  margin-bottom: 2rem;
+}
+
+aside {
+  display: flex;
+  justify-content: space-around;
+}
+
+aside h3 span {
+  font-weight: normal;
+}
+
+section {
+  border: 1px solid gray;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: .5rem;
+  flex-wrap: wrap;
+  padding: 1rem;
+  margin-bottom: 2rem;
+}
+
+section span.emoji {
+  font-size: 2rem;
+  border: 1px solid gray;
+  padding: .5rem;
+  border-radius: 10px;
+  cursor: default;
+  transition: all .5s;
+}
+
+.pointer {
+  cursor: pointer;
+}
+
+.waiting {
+  cursor: wait !important;
+}
+
+.emoji.hidden {
+  color: transparent;
+  background-color: lightgray;
+}
+
+.emoji.hidden::selection {
+  background-color: transparent;
+}
+
+main button {
+  border: none;
+  background-color: var(--primary-color);
+  cursor: pointer;
+  font-size: 1rem;
+  padding: 0.75rem;
+  text-transform: uppercase;
+  font-weight: bold;
+  border-bottom: 5px solid white;
+  transition: border-bottom-color 1s;
+}
+
+main button:hover {
+  border-bottom-color: black;
+}
+
+main button span {
+  background-color: white;
+  padding: 0.2rem;
+  border-radius: 50%;
+  margin-left: .5rem;
+}
+
+@media (max-width: 600px) {
+  aside {
+    flex-direction: column;
+    row-gap: .75rem;
+    align-items: start;
+  }
+}

@@ -3,9 +3,43 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
+  <link rel="stylesheet" href="global.css">
+  <link rel="stylesheet" href="index.css">
   <title>Memojization - The emoji memorization game</title>
 </head>
 <body>
+  <header>
+    <h1><a href="">🤔 M<span>emoji</span>zation</a></h1>
+    <h3>the emoji memorization game</h3>
+  </header>
+  <main>
+    <aside>
+      <p>Categories</p>
+      <h6>* if no categories are selected, random emojis will be used instead</h6>
+    </aside>
+    <form action="game.html">
+      <div class="input"i>
+        <label for="name">Player name:</label>
+        <input type="text" name="name" id="name" required>
+      </div>
+      <div class="input">
+        <label for="quantity">Nº of pieces: </label>
+        <input type="number" name="quantity" id="quantity" min="2" required>
+      </div>
+      <input type="hidden" name="emojis">
+      <div id="emojis"></div>
+      <div>
+        <button>Start game <span>&#10132;</span></button>
+      </div>
+    </form>
+  </main>
+  <template id="option">
+    <div class="option">
+      <input type="checkbox" id="" tabindex="-1">
+      <label for=""></label>
+    </div>
+  </template>
   <script type="module" src="./index.js"></script>
 </body>
 </html>

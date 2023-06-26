@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
+  <link rel="stylesheet" href="global.css">
+  <link rel="stylesheet" href="game.css">
+  <title>Memojization - The emoji memorization game</title>
+</head>
+<body>
+  <header>
+    <h1><a href="/memojization/">🤔 M<span>emoji</span>zation</a></h1>
+    <h3>the emoji memorization game</h3>
+  </header>
+  <main>
+    <aside>
+      <h3>Player: <span id="name"></span></h3>
+      <h3>Duration: <span id="timer">0:00</span></h3>
+      <h3>Punctuation: <span id="punctuation">0</span></h3>
+    </aside>
+    <section></section>
+    <button>Restart game<span>&#8634;</span></button>
+  </main>
+  <template id="emoji">
+    <span class="emoji pointer hidden" data-tries="0"></span>
+  </template>
+  <script type="module" src="./game.js"></script>
+</body>
+</html>
